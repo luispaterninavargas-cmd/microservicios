@@ -1,0 +1,36 @@
+@startuml
+left to right direction
+
+actor "Cliente registrado" as Cliente
+
+rectangle "E-commerce System" {
+
+    ' Definimos los microservicios con posiciones controladas
+    rectangle "Login Microservice" as Login {
+        usecase "Gestión de autenticación" as UC1
+    }
+
+    rectangle "Product Management Microservice" as Productos {
+        usecase "Gestión de productos" as UC2
+    }
+
+    rectangle "Sales Microservice" as Ventas {
+        usecase "Gestión de ventas y carrito" as UC3
+    }
+
+    ' Posicionamiento manual para asegurar el orden visual
+    Login -[hidden]-> Productos
+    Productos -[hidden]-> Ventas
+}
+
+' Conexiones del actor
+Cliente --> UC1
+Cliente --> UC2
+Cliente --> UC3
+
+' Relaciones entre microservicios
+UC2 ..> UC1 : <<valida sesión>>
+UC3 ..> UC1 : <<valida sesión>>
+UC3 ..> UC2 : <<consulta productos>>
+
+@enduml

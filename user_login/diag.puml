@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+
+actor "Usuario" as U
+actor "Microservicios" as MS
+
+rectangle "Login" as S {
+  (Registrarse) as UC1
+  (Iniciar sesión) as UC2
+  (Validar sesión) as UC3
+}
+
+U --> UC1
+U --> UC2
+U --> UC3
+MS --> UC3
+
+@enduml
