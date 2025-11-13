@@ -1,0 +1,9 @@
+
+// microservicio login
+
+
+//microservisio productos
+cd "D:\Mis Documentos\Desktop\Ingenieria Sotfware\SEMESTRE VIII\PROYECTO FINAL E-COMERCE\Microservicio-usuarios\CrudProduct"
+cd "D:\Mis Documentos\Desktop\Ingenieria Sotfware\SEMESTRE VIII\PROYECTO FINAL E-COMERCE\Microservicio-usuarios\user_login"
+cd "D:\Mis Documentos\Desktop\Ingenieria Sotfware\SEMESTRE VIII\PROYECTO FINAL E-COMERCE\Microservicio-usuarios\api-gatewai"
+cd "D:\Mis Documentos\Desktop\Ingenieria Sotfware\SEMESTRE VIII\PROYECTO FINAL E-COMERCE\Microservicio-usuarios\sales microservice"
