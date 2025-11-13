@@ -60,7 +60,7 @@ app.post("/auth/login", async (req, res) => {
   }
 });
 
-// 📦 Productos 
+// Productos 
 app.use("/productos", verificarToken, async (req, res) => {
   try {
     // El microservicio de productos tiene el prefijo /api/productos
